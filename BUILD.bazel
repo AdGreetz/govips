@@ -1,0 +1,11 @@
+package(default_visibility = ["@//visibility:public"])
+
+load("@bazel_gazelle//:def.bzl", "gazelle")
+load("@bazel_gazelle//:def.bzl", "DEFAULT_LANGUAGES", "gazelle_binary")
+
+# gazelle:prefix github.com/AdGreetz/govips
+gazelle(
+    name = "gazelle",
+    external = "external",
+)
+
